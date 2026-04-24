@@ -28,7 +28,7 @@ agentic-receipt-audit-github/
 ├── requirements.txt
 ├── README.md
 ├── notebooks/
-│   └── fixed_receipt_audit_kaggle_notebook.ipynb
+│   └── fixed_receipt_audit.ipynb
 ├── examples/
 └── src/
     └── receipt_audit/
