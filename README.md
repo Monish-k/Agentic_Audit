@@ -96,8 +96,8 @@ You can load the fine-tuned adapter either:
 Set these environment variables:
 
 ```bash
-export RECEIPT_AUDIT_BASE_MODEL="Qwen/Qwen3-VL-2B-Instruct"
-export RECEIPT_AUDIT_ADAPTER="your-username/your-adapter-repo"
+export RECEIPT_AUDIT_BASE_MODEL="Qwen/Qwen3-VL-4B-Instruct"
+export RECEIPT_AUDIT_ADAPTER="Monish-K/qwen-3-vl-4b-instruct-lora-cord-v2"
 ```
 
 For a local adapter directory:
@@ -126,63 +126,8 @@ By default the app launches on port `7860`.
 
 ## Hugging Face Spaces
 
-This repo is also Spaces-friendly.
+This repo is also 'Spaces-friendly', so the adapter need to be downloaded from hugginface - Monish-K/qwen-3-vl-4b-instruct-lora-cord-v2
 
-At the top of `README.md` in the Space, add a YAML header like:
+## Example
 
-```yaml
----
-title: Agentic Receipt Audit
-emoji: 🧾
-colorFrom: blue
-colorTo: purple
-sdk: gradio
-app_file: app.py
-pinned: false
----
-```
-
-Then set Space variables:
-
-- `RECEIPT_AUDIT_BASE_MODEL`
-- `RECEIPT_AUDIT_ADAPTER`
-
-## What to commit vs not commit
-
-Commit:
-
-- source code
-- README
-- architecture diagram
-- notebook
-
-Do **not** commit:
-
-- large adapter weights directly into GitHub
-- private evaluation receipts
-- large artifacts or cached model downloads
-
-Use a Hugging Face model repo for the adapter.
-
-## Suggested screenshots
-
-Put these in `screenshots/`:
-
-- `01_training_complete.png`
-- `02_good_extraction.png`
-- `03_bad_extraction_flagged.png`
-- `04_demo_homepage.png`
-- `05_architecture.png`
-
-## Suggested resume bullets
-
-- Built an agentic multimodal receipt-audit system using Qwen3-VL, PEFT/LoRA, and Gradio.
-- Fine-tuned a vision-language model on CORD to generate schema-constrained JSON from receipt images.
-- Designed an audit layer that validates arithmetic consistency and routes suspicious extractions to review.
-- Packaged the system for Kaggle training, Hugging Face model hosting, and browser-based demo deployment.
-
-## Notes
-
-- Free cloud demos can feel slow because they often run on CPU-only hardware.
-- The parser is intentionally defensive so the system can recover from code fences or formatting noise.
-- The audit layer adds reliability even when extraction is imperfect.
+![Usecase](Screenshot_2026-04-24_at_4.27.01_PM.png)
