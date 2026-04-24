@@ -17,7 +17,7 @@ This repo is structured so it can run locally **or** be deployed to Hugging Face
 
 ## Architecture
 
-![Architecture](assets/architecture_diagram.png)
+![Architecture](architecture_diagram.png)
 
 ## Repository structure
 
