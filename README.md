@@ -126,4 +126,4 @@ This repo is also 'Spaces-friendly', so the adapter need to be downloaded from h
 
 ## Example
 
-![Usecase](use_case_example.png)
+![Usecase](hugginface_demo_example.png)
