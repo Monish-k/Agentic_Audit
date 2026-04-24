@@ -17,7 +17,7 @@ This repo is structured so it can run locally **or** be deployed to Hugging Face
 
 ## Architecture
 
-![Architecture](architecture_diagram.png)
+![Architecture](assets/architecture_diagram.png)
 
 ## Repository structure
 
@@ -130,4 +130,4 @@ This repo is also 'Spaces-friendly', so the adapter need to be downloaded from h
 
 ## Example
 
-![Usecase](Screenshot_2026-04-24_at_4.27.01_PM.png)
+![Usecase](assets/use_case_example.png)
