@@ -1,0 +1,9 @@
+gradio
+torch
+torchvision
+transformers>=4.57.0
+peft
+accelerate
+bitsandbytes
+pillow
+safetensors
